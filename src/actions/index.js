@@ -16,10 +16,11 @@ class Actions {
       'messageReceived'
     );
   }
-
+  
   login(router){
     return (dispatch) => {
-      var firebaseRef = new Firebase('https://react-stack.firebaseio.com');
+      var firebaseRef = new Firebase('https://react-stack-49b8c.firebaseio.com');
+      
       firebaseRef.authWithOAuthPopup("google", (error, user)=> {
         if(error){
           return;
@@ -31,6 +32,7 @@ class Actions {
       });
     }
   }
+  
 }
 
 export default alt.createActions(Actions);

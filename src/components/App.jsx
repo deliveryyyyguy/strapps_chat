@@ -33,7 +33,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <AppBar title="Awesome Chat App" />
+        <AppBar title="Strapps Chat App" />
         <RouteHandler />
       </div>
     );

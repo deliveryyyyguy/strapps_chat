@@ -11,7 +11,7 @@ let MessageSource = {
         firebaseRef.off();
       }
 
-      firebaseRef = new Firebase('https://react-stack.firebaseio.com/messages/' +
+      firebaseRef = new Firebase('https://react-stack-49b8c.firebaseio.com/messages/' +
         state.selectedChannel.key);
 
       return new Promise((resolve, reject) => {
@@ -45,9 +45,14 @@ let MessageSource = {
         firebaseRef.push({
           "message": state.message,
           "date": new Date().toUTCString(),
-          "author": state.user.google.displayName,
-          "userId": state.user.uid,
-          "profilePic": state.user.google.profileImageURL
+          "author": "Rick King",
+          "userId": "1",
+          "profilePic": "https://lh3.googleusercontent.com/-hF2FXDjv-2g/V4Gx9vHlQeI/AAAAAAAAABs/h8QAkXgxpDYXwGxWaFJMJaI6ZGMtNRaTwCKgB/w139-h140-p/homestead.jpg"
+          ////
+          //"date": new Date().toUTCString(),
+          //"author": state.user.google.displayName,
+          //"userId": state.user.uid,
+          //"profilePic": state.user.google.profileImageURL
         });
         resolve();
       });

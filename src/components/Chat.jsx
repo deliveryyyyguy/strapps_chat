@@ -23,12 +23,11 @@ class Chat extends React.Component {
     );
   }
 
-  static willTransitionTo(transition){
-    var state = ChatStore.getState();
-    if(!state.user){
-      transition.redirect('/login');
-    }
-  }
+  //static willTransitionTo(transition){
+    //var state = ChatStore.getState();
+    //if(!state.user){
+    //transition.redirect('/login'); 
+  //}
 }
 
 export default Chat;

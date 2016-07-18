@@ -1,7 +1,7 @@
 import Actions from '../actions';
 import Firebase from 'firebase';
 
-let firebaseRef = new Firebase('https://react-stack.firebaseio.com/channels');
+let firebaseRef = new Firebase('https://react-stack-49b8c.firebaseio.com/channels');
 
 let ChannelSource = {
   getChannels: {
